@@ -243,15 +243,8 @@
   footer p{color:var(--ash);font-size:.95rem;margin-top:9px}
   footer a{color:var(--flame);font-weight:700;text-decoration:none}
 
-  .to-top{
-    position:fixed;right:16px;bottom:16px;z-index:60;
-    width:54px;height:54px;border-radius:50%;
-    background:var(--ember);color:#fff;text-decoration:none;
-    display:flex;align-items:center;justify-content:center;
-    font-size:1.45rem;font-weight:800;line-height:1;
-    box-shadow:0 6px 18px rgba(0,0,0,.55);border:2px solid var(--flame);
-  }
-  .to-top:hover{background:var(--ketchup)}
+  
+  
 
   .lightbox{
     position:fixed;inset:0;z-index:100;background:rgba(4,2,1,.97);
@@ -300,7 +293,7 @@
 .sig-backtop:hover{background:#cc3e0a;}
 .sig-booknow{position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:55; background:#ff4d0d; color:#fff; text-decoration:none; font-weight:800; writing-mode:vertical-rl; font-family:"Barlow Condensed",sans-serif; letter-spacing:.08em; text-transform:uppercase; font-size:14px; padding:14px 6px; border-radius:0 10px 10px 0; box-shadow:3px 4px 14px rgba(7,30,66,.35); display:inline-flex; align-items:center; justify-content:center; width:30px; min-height:104px;}
 .sig-booknow:hover{background:#cc3e0a;}
-.sig-tab-arrow{flex:none; width:15px; height:15px; margin-top:7px;}
+.sig-tab-arrow{flex:none; width:15px; height:15px; margin-top:7px;}.sig-backtop .sig-tab-arrow{margin-top:0;margin-bottom:7px;}
 @media (max-width:900px){ .sig-booknow,.sig-backtop{width:26px; font-size:12px; min-height:92px; padding:12px 4px;} }
 </style>
 </head>
@@ -596,7 +589,7 @@
   <p>Open Friday, Saturday and Sunday. Closed Monday to Thursday.</p>
 </footer>
 
-<a class="to-top" href="#top" aria-label="Back to top">&#8593;</a>
+
 
 <div class="lightbox" id="img-ribs" role="dialog" aria-label="Smoked beef ribs, full screen">
   <a class="lb-bg" href="#top" aria-label="Close full screen photo"></a>
@@ -644,6 +637,6 @@
 </div>
 
 <a class="sig-booknow" href="#offer" aria-label="Book now, jump to the booking section">Book Now <svg class="sig-tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 14l7 7 7-7"/></svg></a>
-<a class="sig-backtop" href="#top" aria-label="Back to top">Back To Top <svg class="sig-tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V3"/><path d="M5 10l7-7 7 7"/></svg></a>
+<a class="sig-backtop" href="#top" aria-label="Back to top"><svg class="sig-tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V3"/><path d="M5 10l7-7 7 7"/></svg>Back To Top</a>
 </body>
 </html>
